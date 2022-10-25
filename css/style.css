@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+/* основной стиль */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: bisque;
+    cursor: url('./images/cursor.svg'), auto;
+}
+
+/* шапка */
+.header {
+    padding: 80px;
+    text-align: center;
+
+    background-image: url('./images/bg.jpg');
+    color: black;
+}
+
+/* шрифт заголовка */
+.header h1 {
+    font-size: 40px;
+}
+
+/* панель навигации */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(252, 191, 35);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+/* cтиль ссылок на панели навигации */
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* ссылка справа */
+.navbar a.right {
+    float: right;
+}
+
+
+/* активная ссылка */
+.navbar a.active {
+    background-color: rgb(216, 151, 0);
+    color: white;
+}
+
+/* активная правая ссылка*/
+.navbar a.active-right {
+    background-color: rgb(216, 151, 0);
+    color: white;
+    float: right;
+}
+
+/* контейнер для колонн */
+.row {  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+
+/* 2 столбца рядом друг с другом */
+/* боковая панель/левая колонка */
+.side {
+    -ms-flex: 30%; 
+    flex: 30%;
+    background-image: url('./images/heh.jpeg');
+    padding: 40px;
+}
+
+
+/* фон */
+.fakeimg {
+    background-color: rgba(171, 211, 242, 0.734);
+    width: 97%;
+    padding: 20px;
+}
+
+/* низ */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(255, 177, 32);
+}
